@@ -150,6 +150,65 @@
             </div>
         </section>
 
+        <!-- Model Spotlight Section -->
+        <section class="bg-white rounded-[3rem] border border-slate-200 overflow-hidden shadow-2xl shadow-slate-200/50">
+            <div class="grid md:grid-cols-2">
+                <!-- Left Panel: Simulation -->
+                <div class="p-4 bg-slate-900 relative group">
+                    <div class="absolute top-8 left-8 z-10">
+                        <span class="px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-500/30 text-indigo-400 text-xs font-mono">live_simulation.py</span>
+                    </div>
+                    <canvas id="tonerTuCanvas"></canvas>
+                    <div class="mt-4 flex justify-between items-center px-4">
+                        <span class="text-slate-400 text-xs font-mono italic">Emergent alignment in active fluids</span>
+                        <button id="resetSim" class="text-indigo-400 text-xs hover:text-white transition">Reset Simulation</button>
+                    </div>
+                </div>
+                <!-- Right Panel: Explanation & Visuals -->
+                <div class="p-8 md:p-12 space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">The Toner-Tu Model</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            How do thousands of independent agents reach a consensus of motion? The Toner-Tu model is the "hydrodynamics of flocking." It describes how simple local interactions lead to massive, coherent collective motion—breaking symmetry without a leader.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400">Universal Applications</h4>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="space-y-2">
+                                <div class="h-24 bg-slate-100 rounded-xl overflow-hidden relative group">
+                                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=300" alt="Bird Flocks" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                                    <div class="absolute inset-0 bg-indigo-600/10"></div>
+                                </div>
+                                <p class="text-[10px] font-bold text-center text-slate-500">BIRD FLOCKS</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="h-24 bg-slate-100 rounded-xl overflow-hidden relative group">
+                                    <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&q=80&w=300" alt="Fish Schools" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                                    <div class="absolute inset-0 bg-indigo-600/10"></div>
+                                </div>
+                                <p class="text-[10px] font-bold text-center text-slate-500">FISH SCHOOLS</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="h-24 bg-slate-100 rounded-xl overflow-hidden relative group">
+                                    <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=300" alt="Cell Movement" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                                    <div class="absolute inset-0 bg-indigo-600/10"></div>
+                                </div>
+                                <p class="text-[10px] font-bold text-center text-slate-500">CELL MIGRATION</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-slate-100">
+                        <p class="text-sm text-slate-500 italic">
+                            "From macroscopic birds to microscopic cytoskeleton filaments, the same laws of physics apply."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Final Product -->
         <section id="goals" class="bg-indigo-600 rounded-[3rem] p-8 md:p-16 text-white overflow-hidden relative">
             <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
